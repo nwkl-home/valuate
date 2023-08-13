@@ -1,4 +1,4 @@
-# java-valuate
+# valuate
 
 基于[govaluate](https://github.com/Knetic/govaluate)提供对java版本规则引擎的支持。
 
