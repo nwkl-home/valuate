@@ -5,8 +5,8 @@
     <groupId>com.nwklz</groupId>
     <artifactId>valuate</artifactId>
     <version>0.0.1</version>
-    <name>javavaluate</name>
-    <description>javavaluate</description>
+    <name>valuate</name>
+    <description>valuate</description>
     <properties>
         <java.version>8</java.version>
     </properties>

@@ -2,6 +2,15 @@
 
 基于[govaluate](https://github.com/Knetic/govaluate)提供对java版本规则引擎的支持。
 
+### 依赖
+
+```xml
+    <dependency>
+        <groupId>com.nwklz</groupId>
+        <artifactId>valuate</artifactId>
+    </dependency>
+
+```
 
 ### 设计有4种类型概念，基于以下类型进行计算:
 + 字符串(String)
