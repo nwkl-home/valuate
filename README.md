@@ -33,6 +33,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Map<String, Object> parameters = new HashMap<String, Object>();
         parameters.put("a", 2);
+        Map<String, Function> functionMap = new HashMap<String, Function>();
         EvaluableExpression e1 = new EvaluableExpression("a + 1", functionMap); // 3 使用变量
         EvaluableExpression e2 = new EvaluableExpression("1 + 1", functionMap); // 2 +
         EvaluableExpression e3 = new EvaluableExpression("2 - 1", functionMap); // 1 -
@@ -68,6 +69,7 @@ public class Main {
         list.add("1");
         list.add(2);
         parameters.put("list", list);
+        Map<String, Function> functionMap = new HashMap<String, Function>();
         EvaluableExpression e1 = new EvaluableExpression("a == 2", functionMap); // true
         EvaluableExpression e2 = new EvaluableExpression("a != 2", functionMap); // false
         EvaluableExpression e3 = new EvaluableExpression("a >= 2", functionMap); // true
@@ -103,6 +105,7 @@ public class Main {
         list.add("1");
         list.add(2);
         parameters.put("list", list);
+        Map<String, Function> functionMap = new HashMap<String, Function>();
         EvaluableExpression e1 = new EvaluableExpression("a == 2 ? 'a': 'b'", functionMap); // a
         EvaluableExpression e2 = new EvaluableExpression("a != 2 ? 'a': 'b'", functionMap); // b
         System.out.println(e1.evaluate(parameters));
