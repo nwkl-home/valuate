@@ -100,8 +100,10 @@ public class EvaluationStagePlanner implements StagePlanner {
                 .typeErrorFormat(ErrorFormat.prefixErrorFormat)
                 .nextRight(PLAN_FUNCTION)
                 .build();
+
+        private final StagePlanner _this = EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build();
         public EvaluationStage plan(TokenStream stream) throws Exception {
-            return EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build().plan(stream);
+            return _this.plan(stream);
         }
     };
 
@@ -112,8 +114,10 @@ public class EvaluationStagePlanner implements StagePlanner {
                 .typeErrorFormat(ErrorFormat.modifierErrorFormat)
                 .next(PLAN_FUNCTION)
                 .build();
+
+        private final StagePlanner _this = EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build();
         public EvaluationStage plan(TokenStream stream) throws Exception {
-            return EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build().plan(stream);
+            return _this.plan(stream);
         }
     };
 
@@ -124,8 +128,10 @@ public class EvaluationStagePlanner implements StagePlanner {
                 .typeErrorFormat(ErrorFormat.modifierErrorFormat)
                 .next(PLAN_EXPONENTIAL)
                 .build();
+
+        private final StagePlanner _this = EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build();
         public EvaluationStage plan(TokenStream stream) throws Exception {
-            return EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build().plan(stream);
+            return _this.plan(stream);
         }
     };
 
@@ -136,8 +142,10 @@ public class EvaluationStagePlanner implements StagePlanner {
                 .typeErrorFormat(ErrorFormat.modifierErrorFormat)
                 .next(PLAN_MULTIPLICATIVE)
                 .build();
+
+        private final StagePlanner _this = EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build();
         public EvaluationStage plan(TokenStream stream) throws Exception {
-            return EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build().plan(stream);
+            return _this.plan(stream);
         }
     };
 
@@ -148,8 +156,10 @@ public class EvaluationStagePlanner implements StagePlanner {
                 .typeErrorFormat(ErrorFormat.modifierErrorFormat)
                 .next(PLAN_ADDITIVE)
                 .build();
+
+        private final StagePlanner _this = EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build();
         public EvaluationStage plan(TokenStream stream) throws Exception {
-            return EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build().plan(stream);
+            return _this.plan(stream);
         }
     };
 
@@ -160,8 +170,10 @@ public class EvaluationStagePlanner implements StagePlanner {
                 .typeErrorFormat(ErrorFormat.modifierErrorFormat)
                 .next(PLAN_SHIFT)
                 .build();
+
+        private final StagePlanner _this = EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build();
         public EvaluationStage plan(TokenStream stream) throws Exception {
-            return EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build().plan(stream);
+            return _this.plan(stream);
         }
     };
 
@@ -172,8 +184,10 @@ public class EvaluationStagePlanner implements StagePlanner {
                 .typeErrorFormat(ErrorFormat.comparatorErrorFormat)
                 .next(PLAN_BITWISE)
                 .build();
+
+        private final StagePlanner _this = EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build();
         public EvaluationStage plan(TokenStream stream) throws Exception {
-            return EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build().plan(stream);
+            return _this.plan(stream);
         }
     };
 
@@ -184,8 +198,10 @@ public class EvaluationStagePlanner implements StagePlanner {
                 .typeErrorFormat(ErrorFormat.logicalErrorFormat)
                 .next(PLAN_COMPARATOR)
                 .build();
+
+        private final StagePlanner _this = EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build();
         public EvaluationStage plan(TokenStream stream) throws Exception {
-            return EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build().plan(stream);
+            return _this.plan(stream);
         }
     };
 
@@ -196,8 +212,10 @@ public class EvaluationStagePlanner implements StagePlanner {
                 .typeErrorFormat(ErrorFormat.logicalErrorFormat)
                 .next(PLAN_LOGICAL_AND)
                 .build();
+
+        private final StagePlanner _this = EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build();
         public EvaluationStage plan(TokenStream stream) throws Exception {
-            return EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build().plan(stream);
+            return _this.plan(stream);
         }
     };
 
@@ -208,8 +226,10 @@ public class EvaluationStagePlanner implements StagePlanner {
                 .typeErrorFormat(ErrorFormat.ternaryErrorFormat)
                 .next(PLAN_LOGICAL_OR)
                 .build();
+
+        private final StagePlanner _this = EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build();
         public EvaluationStage plan(TokenStream stream) throws Exception {
-            return EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build().plan(stream);
+            return _this.plan(stream);
         }
     };
 
@@ -219,8 +239,10 @@ public class EvaluationStagePlanner implements StagePlanner {
                 .validKinds(new TokenKind[]{TokenKind.SEPARATOR})
                 .next(PLAN_TERNARY)
                 .build();
+
+        private final StagePlanner _this = EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build();
         public EvaluationStage plan(TokenStream stream) throws Exception {
-            return EvaluationStagePlanner.builder().precedencePlanner(precedencePlanner).build().plan(stream);
+            return _this.plan(stream);
         }
     };
 
