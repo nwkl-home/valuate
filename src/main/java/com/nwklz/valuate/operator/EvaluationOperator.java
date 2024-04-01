@@ -206,7 +206,7 @@ public class EvaluationOperator {
             if (leftStage != null) {
                 if (leftStage.getClass().isArray()) {
                     isOk = true;
-                    objects = new ArrayList<Object>(Arrays.asList((Object[]) leftStage));
+                    objects.addAll(Arrays.asList((Object[]) leftStage));
                 } else if (leftStage instanceof Collection){
                     isOk = true;
                     objects.addAll((Collection<?>) leftStage);
